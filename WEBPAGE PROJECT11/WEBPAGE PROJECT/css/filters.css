@@ -1,0 +1,19 @@
+.layout {
+    display: flex;
+    gap: 30px;
+}
+
+.filters {
+    width: 220px;
+    background: rgb(253, 162, 162);
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+

@@ -1,0 +1,13 @@
+body {
+    background-color: #ffbbd4;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}

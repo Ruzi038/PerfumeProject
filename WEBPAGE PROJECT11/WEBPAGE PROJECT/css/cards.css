@@ -1,0 +1,23 @@
+.perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.perfume-card {
+    background: (255, 132, 216);
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.perfume-card img {
+    width: 100%;
+}
+
+.perfume-card button {
+    margin-top: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+

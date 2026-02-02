@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aromëza</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+<body>
+
+<header class="top-header">
+    <div class="logo">Aromëza</div>
+
+    <input
+  type="text"
+  id="searchInput"
+  placeholder="Search perfumes, brands, notes..."
+>
+
+
+    <nav>
+        <a href="#">Perfumes</a>
+        <a href="#">Brands</a>
+        <a href="#">Notes</a>
+        <a href="#">Shop</a>
+    </nav>
+    
+    <button id="openCartBtn" class="cart-button">View Cart</button>
+
+</header>
+
+<section class="carousel">
+    <button class="prev">‹</button>
+    <div class="carousel-track"></div>
+    <button class="next">›</button>
+</section>
+
+<main class="content">
+    <div class="layout">
+        <aside class="filters">
+            <h3>Filter</h3>
+            <label>
+                Brand
+                <select id="brandFilter">
+                    <option value="all">All</option>
+                    <option value="Dior">Dior</option>
+                    <option value="Chanel">Chanel</option>
+                    <option value="Yves Saint Laurent">Yves Saint Laurent</option>
+                    <option value="Giorgio Armani">Giorgio Armani</option>
+                    <option value="Tom Ford">Tom Ford</option>
+                    <option value="Creed">Creed</option>
+                    <option value="Marc Jacobs">Marc Jacobs</option>
+                    <option value="Viktor & Rolf">Viktor & Rolf</option>
+                    <option value="Le Labo">Le Labo</option>
+                    <option value="Calvin Klein">Calvin Klein</option>
+                    <option value="Diptyque">Diptyque</option>
+                </select>
+            </label>
+            <label>
+                Max Price ($)
+               <input type="range" min="0" max="1000" value="1000" id="priceFilter">
+
+            </label>
+<h4>Gender</h4>
+
+<label>
+  <input type="checkbox" class="gender" name="gender" value="men">
+  Men
+</label>
+
+<label>
+  <input type="checkbox" class="gender" name="gender" value="women">
+  Women
+</label>
+
+<label>
+  <input type="checkbox" class="gender" name="gender" value="unisex">
+  Unisex
+</label>
+
+            <h4>Season</h4>
+            <label><input type="checkbox" value="Summer" class="season"> Summer</label>
+            <label><input type="checkbox" value="Winter" class="season"> Winter</label>
+            <label><input type="checkbox" value="Spring" class="season"> Spring</label>
+            <label><input type="checkbox" value="Fall" class="season"> Fall</label>
+            <label><input type="checkbox" value="All Seasons" class="season"> All Seasons</label>
+
+
+            <h4>Longevity</h4>
+            <label><input type="checkbox" value="Long" class="longevity"> Long lasting</label>
+            <label><input type="checkbox" value="Moderate" class="longevity"> Moderate</label>
+        </aside>
+
+      
+        <section class="products">
+            <h2>Popular Perfumes</h2>
+            <div class="perfume-grid" id="perfumeGrid"></div>
+        </section>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+
+<div class="modal" id="cartModal" style="display:none;">
+    <div class="modal-content">
+        <button id="closeCartBtn">Close</button>
+        <div id="cartItems"></div>
+        <div id="cartTotal"></div>
+    </div>
+</div>
+
+</main>
+
+
+<script src="js/data.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/category.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/top-search.js"></script>
+
+
+</body>
+</html>
